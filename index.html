@@ -15,6 +15,7 @@
 
     <!--Factories-->
     <script src="factories/TurnstileFactory.js"></script>
+    <script src="factories/UserFactory.js"></script>
 
     <!--Libraries-->
     <script src="lib/lodash/lodash.min.js"></script>
@@ -23,6 +24,7 @@
     <!--Common Components-->
     <script src="components/common/error-view/error-view.directive.js"></script>
     <script src="components/common/success-view/success-view.directive.js"></script>
+    <script src="components/common/logout/logout.directive.js"></script>
 
     <!--View Components-->
     <script src="components/views/lane-select/lane-select.directive.js"></script>
@@ -33,10 +35,14 @@
     <!--Services-->
     <script src="services/utils.service.js"></script>
     <script src="services/turnstile.service.js"></script>
+    <script src="services/user.service.js"></script>
 
   </head>
   <body>
-    <div ng-view style='height: 100vh;'>
+    <div class="horizontal-center" style="width: 100%; padding-top: 30px;">
+      <img src="/assets/img/Logo Vantage.svg" alt="Vantage Logo" />
+    </div>
+    <div ng-view style='height: 100%;'>
     </div>
   </body>
 </html>

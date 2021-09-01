@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app')
-  .directive('exitLane', ['TurnstileService', function(TurnstileService) {
+  .directive('exitLane', ['TurnstileService', 'UserService', function(TurnstileService, UserService) {
     var directive = {};
 
     directive.restrict = 'E';
@@ -12,7 +12,11 @@ angular.module('app')
 
     directive.controller = function($scope) {
 
-     
+      var init = function() {
+        UserService.hasLogin();
+     }
+
+     init();
     }
 
     directive.compile = function(element) {

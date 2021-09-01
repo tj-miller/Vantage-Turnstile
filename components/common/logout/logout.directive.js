@@ -1,22 +1,21 @@
 'use strict';
 
 angular.module('app')
-  .directive('closedLane', ['TurnstileService', 'UserService', function(TurnstileService, UserService) {
+  .directive('logout', ['UserService', function(UserService) {
     var directive = {};
 
     directive.restrict = 'E';
     directive.scope = {
     };
-    directive.templateUrl = "components/views/closed-lane/closed-lane.html";
+    directive.templateUrl = "components/common/logout/logout.html";
     directive.transclude = true;
 
     directive.controller = function($scope) {
+     
+      $scope.logout = function() {
+        UserService.logout();
+      }
 
-     var init = function() {
-        UserService.hasLogin();
-     }
-
-     init();
     }
 
     directive.compile = function(element) {

@@ -6,6 +6,7 @@ angular.module('app')
     var assetURL = 'https://horizon.vantagelabs.co/assets';
     // var baseURL = 'https://horizon.vantagelabs.co/v2_api';
     var baseURL = 'https://dev1.vantagelabs.co/v2_api';
+    var loginAppURL = 'http://atlantisapplicationselect:8081/';
     var version = 'v1.0.0';
 
     var getAssetURL = function() {
@@ -16,6 +17,10 @@ angular.module('app')
       return baseURL;
     }
 
+    var getLoginAppURL = function() {
+      return loginAppURL;
+    }
+
     var v = function() {
       return version;
     }
@@ -23,6 +28,7 @@ angular.module('app')
     return {
       getAssetURL: getAssetURL,
       getBaseURL: getBaseURL,
-      v: v
+      v: v,
+      getLoginAppURL: getLoginAppURL
     }
   });

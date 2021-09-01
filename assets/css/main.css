@@ -71,3 +71,21 @@
   font-style: normal;
   font-display: swap;
 }
+
+.horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-button {
+  height: 55px;
+  width: 215px;
+  max-width: 35vw;
+  border-radius: 39px;
+  background-color: #7165e3;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: bold;
+}

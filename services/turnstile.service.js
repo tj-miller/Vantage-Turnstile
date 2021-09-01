@@ -4,12 +4,12 @@ angular.module('app')
   .factory('TurnstileService', ['TurnstileFactory',
     function(TurnstileFactory) {
 
-      var someFunction = function() {
-          return TurnstileFactory.anotherFunction();
+      var testFn = function() {
+          return TurnstileFactory.testFn();
       }
 
       return {
-        someFunction: someFunction
+        testFn: testFn
       }
     }
   ]);
