@@ -14,6 +14,10 @@ angular.module('app')
 
       var init = function() {
         UserService.checkLogin();
+        TurnstileService.fetchLanes().then(function(res){
+          TurnstileService.setLanesList(res);
+          console.log(TurnstileService.getLanesList());
+        });
       }
 
       init();
