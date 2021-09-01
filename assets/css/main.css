@@ -1,0 +1,73 @@
+:root {
+  --background-two: #ffffff;
+  --privacy-policy-link: #9ea5bd;
+  --primary-button-text-color: #ffffff;
+  --primary-button-background: #7165e3;
+  --primary-button-disabled-background: #d0cdf3;
+  --form-label-color: #2c2948;
+  --error: #ef5261;
+  --input-hover: rgba(113, 101, 227, 0.12);
+  --input-box: rgba(196, 196, 196, 0.42);
+  --input-box-placeholder: #a6a6a6;
+  --placeholder-text-color: rgba(196, 196, 196, 0.42);
+  --main-text-color: #000000;
+  --user-description: rgba(0, 0, 0, 0.29);
+  --profile-highlight: #e9216e;
+  --font-main-headings: 'Comfortaa';
+  --font-sub-headings: 'Open Sans', sans-serif;
+  --font-links: 'Poppins', sans-serif;
+  --main-layout-modal-bg: rgba(0, 0, 0, 0.4);
+  --radio-button-active-background: #51c989;
+  --radio-button-check: #ffffff;
+  --radio-button-unhecked-border: #5e54c5;
+  --register-link: #7165e3;
+  --no-context-title: #5e53c4;
+  --navbar-inactive: rgba(255, 255, 255, 0.79);
+  --navbar-active: #ffffff;
+  --user-profile-gradient-border: linear-gradient(.25turn, #7012ad, #eb366e, #ffa161);
+  --menu-text: #ffffff;
+  --primary: #7165e3;
+  --primary-background: #ffffff;
+  --secondary-button-background: #ffffff;
+  --secondary-button-text-color: #7165e3;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../fonts/Comfortaa-Bold.eot');
+  src: url('../fonts/Comfortaa-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Comfortaa-Bold.woff2') format('woff2'),
+      url('../fonts/Comfortaa-Bold.woff') format('woff'),
+      url('../fonts/Comfortaa-Bold.ttf') format('truetype'),
+      url('../fonts/Comfortaa-Bold.svg#Comfortaa-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.eot');
+  src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Poppins-Regular.woff2') format('woff2'),
+      url('../fonts/Poppins-Regular.woff') format('woff'),
+      url('../fonts/Poppins-Regular.ttf') format('truetype'),
+      url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff'),
+      url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+      url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
