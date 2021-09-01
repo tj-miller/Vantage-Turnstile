@@ -4,12 +4,14 @@ angular.module('app')
   .factory('TurnstileService', ['TurnstileFactory',
     function(TurnstileFactory) {
 
-      var testFn = function() {
-          return TurnstileFactory.testFn();
+      var laneNumber = '';
+
+      var selectLane = function(lnNum) {
+          laneNumber = lnNum;
       }
 
       return {
-        testFn: testFn
+        selectLane: selectLane
       }
     }
   ]);

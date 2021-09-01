@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app')
-  .directive('laneSelect', ['UserService', function(UserService) {
+  .directive('laneSelect', ['UserService', '$location', 'TurnstileService', function(UserService, $location, TurnstileService) {
     var directive = {};
 
     directive.restrict = 'E';
@@ -17,6 +17,11 @@ angular.module('app')
       }
 
       init();
+
+      $scope.selectLane = function(laneNumber) {
+        TurnstileService.selectLane(laneNumber);
+        $location.path('/closed');
+      }
     }
 
     directive.compile = function(element) {
